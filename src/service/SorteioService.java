@@ -28,6 +28,7 @@ public class SorteioService {
         if (nomes.isEmpty()) {
             return "Não há mais nomes para sortear!";
         }
+
         int index = random.nextInt(nomes.size());
         String sorteado = nomes.remove(index);
         sorteados.add(sorteado);
